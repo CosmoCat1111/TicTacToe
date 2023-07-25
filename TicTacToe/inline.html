@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>inline demo</title>
+</head>
+
+<body>
+
+    <p id="animals"></p>
+
+    <script>
+    car = (val) => "These are my favorite animals: " + val;
+    document.getElementById("animals").innerHTML = car("Dogs, cats, and everything!");
+    </script> 
+
+
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(myFunction);
+
+document.getElementById("demo").innerHTML = "I would like 18 bunnies right? " + someOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
